@@ -54,6 +54,7 @@ class Perceptron(object):
         # self.w_ = rgen.normal(loc=0.0, scale=0.01,size=1 + X.shape[1])
 
         self.w_ = rgen.uniform(-0.5, 0.5, size= X.shape[1]) 
+        #self.w_ = np.full(X.shape[1], np.nan)
         self.b_ = rgen.uniform(-0.5, 0.5)
         self.errors_ = []
         ph = 0  # manejador de la recta mientras se dibuja
